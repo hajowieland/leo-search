@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<overlay id="leo_searchOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" 
+        src="chrome://leo_search/content/leo_searchOverlay.js">
+</script>
+
+<!-- <popup id="contentAreaContextMenu" onpopupshowing="hide_show_meuitem()"> -->
+<popup id="contentAreaContextMenu">
+    <menuitem id="leo_search" 
+              label="Search at leo.org" 
+              insertafter="context-stop" 
+              oncommand="leo_search();" 
+              class="menuitem-iconic"
+              image="chrome://leo_search/skin/ende.png"/>
+</popup>
+
+</overlay>
