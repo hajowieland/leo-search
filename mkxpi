@@ -1,0 +1,58 @@
+#!/bin/bash
+#
+# A simple script to make xpi files.
+# Version: 0.1
+#
+# Patched by Johannes Findeisen to work more usefull.
+# Website: http://hanez.org
+#
+# It expects a directory structure like this:
+# /install.rdf - Installation RDF
+# /install.js - Installation JavaSript
+# /chrome/ - will make the <project>.jar file here.
+# /chrome/content/ - project content files
+# /chrome/locale/ - project locale files
+# /chrome/skin/ - project skin files
+
+usage()
+{
+    echo "Usage: mkxpi <Project_Name> <Version>"
+}
+
+path=`pwd`
+
+echo $path;
+
+project=$1 
+
+version=$2
+
+if [ "1$project" = "1" ]; then
+    usage
+    exit 1
+fi
+
+if [ "1$version" = "1" ]; then
+    usage
+    exit 1
+fi
+
+cd $path
+
+cd chrome
+
+jar -cfM $project.jar ./content ./skin ./locale
+
+cd $path
+
+jar -cfM $project-$version-fx.xpi ./chrome/$project.jar ./install.rdf 
+
+echo "Cleaning up..."
+
+cd $path
+
+rm -f ./chrome/$project.jar
+
+echo "Done!"
+
+exit 0
