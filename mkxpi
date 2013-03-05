@@ -37,15 +37,17 @@ if [ "1$version" = "1" ]; then
     exit 1
 fi
 
+#cd $path
+
+#cd chrome
+
+#jar -cfM $project.jar ./content ./skin ./locale
+
 cd $path
 
-cd chrome
+#jar -cfM $project-$version-fx.xpi ./chrome/$project.jar ./install.rdf ./chrome.manifest
 
-jar -cfM $project.jar ./content ./skin ./locale
-
-cd $path
-
-jar -cfM $project-$version-fx.xpi ./chrome/$project.jar ./install.rdf 
+jar -cfM $project-$version-fx.xpi ./chrome ./defaults ./install.rdf ./chrome.manifest
 
 echo "Cleaning up..."
 

@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Leo Search preferences">
+<!ENTITY pane1.title "Leo Search preferences">
+<!ENTITY selection "Language selection:">
+<!ENTITY checkboolende.label "English - German">
+<!ENTITY checkboolesde.label "Spanish - German">
+<!ENTITY checkboolfrde.label "French - German">
+<!ENTITY checkboolchde.label "Chinese - German">
+<!ENTITY checkboolitde.label "Italian - German">
+<!ENTITY checkboolrude.label "Russian - German">
+

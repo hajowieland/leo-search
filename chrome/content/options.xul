@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://leo_search/locale/options.dtd">
+<prefwindow id="leo_search-preferences" 
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            title="&prefwindow.title;">
+  <prefpane id="pane1" label="&pane1.title;">
+    <preferences>
+      <preference id="bool_ende" name="extensions.leo_search.boolende" type="bool"/>
+      <preference id="bool_esde" name="extensions.leo_search.boolesde" type="bool"/>
+      <preference id="bool_frde" name="extensions.leo_search.boolfrde" type="bool"/>
+      <preference id="bool_chde" name="extensions.leo_search.boolchde" type="bool"/>
+      <preference id="bool_itde" name="extensions.leo_search.boolitde" type="bool"/>
+      <preference id="bool_rude" name="extensions.leo_search.boolrude" type="bool"/>
+    </preferences>
+    <text value="&selection;"/>
+    <groupbox align="center" orient="horizontal">
+      <vbox>
+         <hbox>
+          <checkbox id="checkbool_ende" preference="bool_ende" label="&checkboolende.label;"/>
+        </hbox>
+        <hbox>
+          <checkbox id="checkbool_esde" preference="bool_esde" label="&checkboolesde.label;"/>
+        </hbox>
+        <hbox>
+          <checkbox id="checkbool_frde" preference="bool_frde" label="&checkboolfrde.label;"/>
+        </hbox>
+      </vbox>
+      <vbox>
+       <hbox>
+        <checkbox id="checkbool_chde" preference="bool_chde" label="&checkboolchde.label;"/>
+      </hbox>
+      <hbox>
+        <checkbox id="checkbool_itde" preference="bool_itde" label="&checkboolitde.label;"/>
+      </hbox>
+      <hbox>
+        <checkbox id="checkbool_rude" preference="bool_rude" label="&checkboolrude.label;"/>
+      </hbox>
+    </vbox>
+    </groupbox>
+  </prefpane>
+</prefwindow>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://leo_search/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://leo_search/locale/overlay.dtd">
+<overlay id="leo_search-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="leo_search-strings" src="chrome://leo_search/locale/overlay.properties"/>
+  </stringbundleset>
+  <popup id="contentAreaContextMenu">
+    <menuitem id="context-leo_search-en-de" 
+              label="&leo_searchContext.label-en-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/en.png" 
+              oncommand="leo_search.onSearchCommand(event, 'en', 'de')"/>
+    <menuitem id="context-leo_search-es-de" 
+              label="&leo_searchContext.label-es-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/es.png" 
+              oncommand="leo_search.onSearchCommand(event, 'es', 'de')"/>  
+    <menuitem id="context-leo_search-fr-de" 
+              label="&leo_searchContext.label-fr-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/fr.png" 
+              oncommand="leo_search.onSearchCommand(event, 'fr', 'de')"/>
+    <menuitem id="context-leo_search-ch-de" 
+              label="&leo_searchContext.label-ch-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/ch.png" 
+              oncommand="leo_search.onSearchCommand(event, 'ch', 'de')"/>
+    <menuitem id="context-leo_search-it-de" 
+              label="&leo_searchContext.label-it-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/it.png" 
+              oncommand="leo_search.onSearchCommand(event, 'it', 'de')"/>
+    <menuitem id="context-leo_search-ru-de" 
+              label="&leo_searchContext.label-ru-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/ru.png" 
+              oncommand="leo_search.onSearchCommand(event, 'ru', 'de')"/>
+  </popup>
+</overlay>

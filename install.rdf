@@ -1,28 +1,35 @@
-<?xml version="1.0"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-	<Description about="urn:mozilla:install-manifest">
-		<em:id>{c666c018-6409-4479-afa3-68e4129e7eff}</em:id>
-		<em:name>Leo Search</em:name>
-		<em:version>0.3.2</em:version>
-		<em:description>Searches for marked words in the Database at Leo.org and opens the result in a new tab.</em:description>
-		<em:creator>Johannes Findeisen (you@hanez.org)</em:creator>
-		<em:homepageURL>http://hanez.org/leo-search.html</em:homepageURL>
-		<em:iconURL>chrome://leo_search/skin/leo_search.png</em:iconURL>
-		<em:aboutURL>chrome://leo_search/content/about.xul</em:aboutURL>
-		<em:file>
-			<Description about="urn:mozilla:extension:file:leo_search.jar">
-				<em:package>content/leo_search/</em:package>
-				<em:skin>skin/classic/leo_search/</em:skin>
-			</Description>
-		</em:file>
-    <!-- firefox -->
-		<em:targetApplication>
-			<Description>
-				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-				<em:minVersion>1.0</em:minVersion>
-				<em:maxVersion>3.5.*</em:maxVersion>
-			</Description>
-		</em:targetApplication>
-</Description>
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{c666c018-6409-4479-afa3-68e4129e7eff}</em:id>
+    <em:type>2</em:type><!-- Extension -->
+    <em:name>Leo Search</em:name>
+    <em:version>1.1.0</em:version>
+    <em:creator>Johannes Findeisen</em:creator>
+    <em:homepageURL>http://hanez.org/leo-search.html</em:homepageURL>
+    <em:localized>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>LEO Search</em:name>
+        <em:description>Searches for marked words in the Database at Leo.org and opens the result in a new tab.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>de-DE</em:locale>
+        <em:name>LEO Suche</em:name>
+        <em:description>Sucht nach markierten Wörtern in der Datenbank von Leo.org und öffnet das Ergebnis in einem neuen Tab.</em:description>
+      </Description>
+    </em:localized>
+    <em:aboutURL>chrome://leo_search/content/about.xul</em:aboutURL>
+    <em:iconURL>chrome://leo_search/skin/leo_search.png</em:iconURL>
+    <em:optionsURL>chrome://leo_search/content/options.xul</em:optionsURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><!-- Firefox -->
+        <em:minVersion>3.5</em:minVersion>
+        <em:maxVersion>8.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
 </RDF>

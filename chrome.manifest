@@ -1,0 +1,7 @@
+content   leo_search                 chrome/content/
+skin      leo_search   classic/1.0   chrome/skin/
+locale    leo_search   en-US         chrome/locale/en-US/
+locale    leo_search   de-DE         chrome/locale/de-DE/
+
+overlay   chrome://browser/content/browser.xul chrome://leo_search/content/ff-overlay.xul
+
