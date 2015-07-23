@@ -3,7 +3,6 @@
 <!DOCTYPE overlay SYSTEM "chrome://leo_search/locale/overlay.dtd">
 <overlay id="leo_search-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script src="overlay.js"/>
-  <script src="ff-overlay.js"/>
   <stringbundleset id="stringbundleset">
     <stringbundle id="leo_search-strings" src="chrome://leo_search/locale/overlay.properties"/>
   </stringbundleset>

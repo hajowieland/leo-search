@@ -4,21 +4,21 @@
     <em:id>{c666c018-6409-4479-afa3-68e4129e7eff}</em:id>
     <em:type>2</em:type><!-- Extension -->
     <em:name>Leo Search</em:name>
-    <em:version>1.2.0</em:version>
+    <em:version>1.3.0</em:version>
     <em:creator>Johannes Findeisen</em:creator>
     <em:homepageURL>http://hanez.org/leo-search.html</em:homepageURL>
     <em:localized>
       <Description>
         <em:locale>en-US</em:locale>
         <em:name>LEO Search</em:name>
-        <em:description>Searches for marked words in the Database at Leo.org and opens the result in a new tab.</em:description>
+        <em:description>Searches for marked words in the database at Leo.org and opens the result in a new background tab or foreground tab when holding "Ctrl".</em:description>
       </Description>
     </em:localized>
     <em:localized>
       <Description>
         <em:locale>de-DE</em:locale>
         <em:name>LEO Suche</em:name>
-        <em:description>Sucht nach markierten Wörtern in der Datenbank von Leo.org und öffnet das Ergebnis in einem neuen Tab.</em:description>
+        <em:description>Sucht nach markierten Wörtern in der Datenbank von Leo.org und öffnet das Ergebnis in einem neuen Hintergrund Tab oder im Vordergrund beim gedrückt halten von "Strg".</em:description>
       </Description>
     </em:localized>
     <em:aboutURL>chrome://leo_search/content/about.xul</em:aboutURL>
@@ -28,7 +28,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><!-- Firefox -->
         <em:minVersion>3.5</em:minVersion>
-        <em:maxVersion>18.*</em:maxVersion>
+        <em:maxVersion>39.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
