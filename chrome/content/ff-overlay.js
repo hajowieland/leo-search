@@ -1,6 +1,6 @@
 leo_search.onFirefoxLoad = function(event) {
   document.getElementById("contentAreaContextMenu")
-          .addEventListener("popupshowing", 
+          .addEventListener("ipopupshowing",
            function (e){ leo_search.showFirefoxContextMenu(e); }, false);
 };
 
