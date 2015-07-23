@@ -12,6 +12,8 @@
       <preference id="bool_chde" name="extensions.leo_search.boolchde" type="bool"/>
       <preference id="bool_itde" name="extensions.leo_search.boolitde" type="bool"/>
       <preference id="bool_rude" name="extensions.leo_search.boolrude" type="bool"/>
+      <preference id="bool_plde" name="extensions.leo_search.boolplde" type="bool"/>
+      <preference id="bool_ptde" name="extensions.leo_search.boolptde" type="bool"/>
     </preferences>
     <text value="&selection;"/>
     <groupbox align="center" orient="horizontal">
@@ -25,17 +27,23 @@
         <hbox>
           <checkbox id="checkbool_frde" preference="bool_frde" label="&checkboolfrde.label;"/>
         </hbox>
+        <hbox>
+          <checkbox id="checkbool_plde" preference="bool_plde" label="&checkboolplde.label;"/>
+        </hbox>
       </vbox>
       <vbox>
        <hbox>
         <checkbox id="checkbool_chde" preference="bool_chde" label="&checkboolchde.label;"/>
-      </hbox>
-      <hbox>
-        <checkbox id="checkbool_itde" preference="bool_itde" label="&checkboolitde.label;"/>
-      </hbox>
-      <hbox>
-        <checkbox id="checkbool_rude" preference="bool_rude" label="&checkboolrude.label;"/>
-      </hbox>
+       </hbox>
+       <hbox>
+         <checkbox id="checkbool_itde" preference="bool_itde" label="&checkboolitde.label;"/>
+       </hbox>
+       <hbox>
+         <checkbox id="checkbool_rude" preference="bool_rude" label="&checkboolrude.label;"/>
+       </hbox>
+       <hbox>
+         <checkbox id="checkbool_ptde" preference="bool_ptde" label="&checkboolptde.label;"/>
+       </hbox>
     </vbox>
     </groupbox>
   </prefpane>

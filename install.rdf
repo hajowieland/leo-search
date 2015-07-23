@@ -4,7 +4,7 @@
     <em:id>{c666c018-6409-4479-afa3-68e4129e7eff}</em:id>
     <em:type>2</em:type><!-- Extension -->
     <em:name>Leo Search</em:name>
-    <em:version>1.1.0</em:version>
+    <em:version>1.2.0</em:version>
     <em:creator>Johannes Findeisen</em:creator>
     <em:homepageURL>http://hanez.org/leo-search.html</em:homepageURL>
     <em:localized>
@@ -28,7 +28,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><!-- Firefox -->
         <em:minVersion>3.5</em:minVersion>
-        <em:maxVersion>8.*</em:maxVersion>
+        <em:maxVersion>18.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>

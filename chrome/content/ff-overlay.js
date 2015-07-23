@@ -44,6 +44,18 @@ leo_search.showFirefoxContextMenu = function(event) {
   } else {
     document.getElementById("context-leo_search-ru-de").hidden = false;
   }
+  
+  if(!prefs.getBoolPref("boolplde") || !gContextMenu.isTextSelected) {
+    document.getElementById("context-leo_search-pl-de").hidden = true;
+  } else {
+    document.getElementById("context-leo_search-pl-de").hidden = false;
+  }
+  
+  if(!prefs.getBoolPref("boolptde") || !gContextMenu.isTextSelected) {
+    document.getElementById("context-leo_search-pt-de").hidden = true;
+  } else {
+    document.getElementById("context-leo_search-pt-de").hidden = false;
+  }
 };
 
 window.addEventListener("load", leo_search.onFirefoxLoad, false);

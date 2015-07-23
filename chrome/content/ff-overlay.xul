@@ -38,5 +38,15 @@
               insertafter="context-stop" 
               image="chrome://leo_search/skin/ru.png" 
               oncommand="leo_search.onSearchCommand(event, 'ru', 'de')"/>
+    <menuitem id="context-leo_search-pl-de" 
+              label="&leo_searchContext.label-pl-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/pl.png" 
+              oncommand="leo_search.onSearchCommand(event, 'pl', 'de')"/>
+    <menuitem id="context-leo_search-pt-de" 
+              label="&leo_searchContext.label-pt-de;" 
+              insertafter="context-stop" 
+              image="chrome://leo_search/skin/pt.png" 
+              oncommand="leo_search.onSearchCommand(event, 'pt', 'de')"/>
   </popup>
 </overlay>
