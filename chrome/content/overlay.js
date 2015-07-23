@@ -8,7 +8,10 @@ var leo_search = {
     if(query != null) 
     {
       var myURL = "http://dict.leo.org/" + lang + "de?lang=" + sitelang + "&search=" + query;
-      openNewTabWith(myURL, null, null, true);
+      if(instanceOfMouseEvent.ctrlKey == true)
+        openNewTabWith(myURL, null, null, true);
+      else
+        openNewTabWith(myURL, null, null, true);
     }
   }
 };
