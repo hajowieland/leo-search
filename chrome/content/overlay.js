@@ -4,15 +4,18 @@ var leo_search = {
     this.strings = document.getElementById("leo_search-strings");
   },
   onSearchCommand: function(e, lang, sitelang) {
-    // evil but done in one line... ;)
     var query = window._content.window.getSelection();
     if(query != null) 
     {
       var url = "http://dict.leo.org/" + lang + "de?lang=" + sitelang + "&search=" + query;
-      if(e.ctrlKey == true)
+      if(e.ctrlKey == true && e.shiftKey == true) {
+        window = window.open(decodeURIComponent(url), "leo_search-resultwindow");
+				window.focus();
+		  } else if(e.ctrlKey == true && e.shiftKey == false) {
         this.newTab(url, true);
-      else
+      } else {
         this.newTab(url, false);
+      }
     }
   },
   onFirefoxLoad: function(event) {
