@@ -4,14 +4,15 @@ var leo_search = {
     this.strings = document.getElementById("leo_search-strings");
   },
   onSearchCommand: function(e, lang, sitelang) {
+    // evil but done in one line... ;)
     var query = window._content.window.getSelection();
     if(query != null) 
     {
-      var myURL = "http://dict.leo.org/" + lang + "de?lang=" + sitelang + "&search=" + query;
+      var url = "http://dict.leo.org/" + lang + "de?lang=" + sitelang + "&search=" + query;
       if(e.ctrlKey == true)
-        this.newTab(myURL, true);
+        this.newTab(url, true);
       else
-        this.newTab(myURL, false);
+        this.newTab(url, false);
     }
   },
   onFirefoxLoad: function(event) {
@@ -66,49 +67,10 @@ var leo_search = {
     }
   },
   newTab: function(url, foregroundTab) {
-		//var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
-
-		//if (prefManager.getIntPref("extensions.leo_search.reuse_tab") == 0) {
-			var browser = top.document.getElementById("content");
-			var newtab = browser.addTab(decodeURIComponent(url), {relatedToCurrent: true});
-			if (foregroundTab) {
-				browser.selectedTab = newtab;
-			}
-		//} else {
-		//	this.openOrReuseTab("extensions.leo_search.resultTab", url, foregroundTab);
-		//}
-	},
-	// Taken from https://developer.mozilla.org/en-US/docs/Code_snippets/Tabbed_browser
-	openOrReuseTab: function(attrName, url, foregroundTab) {
-		var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-							.getService(Components.interfaces.nsIWindowMediator);
-		for (var found = false, index = 0, tabbrowser = wm.getEnumerator('navigator:browser').getNext().gBrowser;
-			index < tabbrowser.tabContainer.childNodes.length && !found;
-			index++) {
-
-			var currentTab = tabbrowser.tabContainer.childNodes[index];
-
-			if (currentTab.hasAttribute(attrName)) {
-				found = true;
-				gBrowser.getBrowserAtIndex(index).loadURI(url);
-
-				if (foregroundTab) {
-					tabbrowser.selectedTab = currentTab;
-					tabbrowser.ownerDocument.defaultView.focus();
-				}
-			}
-		}
-		if (!found) {
-			var browserEnumerator = wm.getEnumerator("navigator:browser");
-			var tabbrowser = browserEnumerator.getNext().gBrowser;
-
-			var newTab = tabbrowser.addTab(url);
-			newTab.setAttribute(attrName, "leoOrg");
-
-			if (foregroundTab) {
-				tabbrowser.selectedTab = newTab;
-				tabbrowser.ownerDocument.defaultView.focus();
-			}
+		var browser = top.document.getElementById("content");
+		var newtab = browser.addTab(decodeURIComponent(url), {relatedToCurrent: true});
+		if (foregroundTab) {
+			browser.selectedTab = newtab;
 		}
 	}
 };
