@@ -86,38 +86,27 @@ var leo_search = {
 			index < tabbrowser.tabContainer.childNodes.length && !found;
 			index++) {
 
-			// Get the next tab
 			var currentTab = tabbrowser.tabContainer.childNodes[index];
 
-			// Does this tab contain our custom attribute?
 			if (currentTab.hasAttribute(attrName)) {
-				// Yes
 				found = true;
 				gBrowser.getBrowserAtIndex(index).loadURI(url);
 
 				if (foregroundTab) {
-					// select and focus it.
 					tabbrowser.selectedTab = currentTab;
-
-					// Focus *this* browser window in case another one is currently focused
 					tabbrowser.ownerDocument.defaultView.focus();
 				}
 			}
 		}
 		if (!found) {
-			// Our tab isn't open. Open it now.
 			var browserEnumerator = wm.getEnumerator("navigator:browser");
 			var tabbrowser = browserEnumerator.getNext().gBrowser;
 
-			// Create tab
 			var newTab = tabbrowser.addTab(url);
 			newTab.setAttribute(attrName, "leoOrg");
 
 			if (foregroundTab) {
-				// Focus tab
 				tabbrowser.selectedTab = newTab;
-
-				// Focus *this* browser window in case another one is currently focused
 				tabbrowser.ownerDocument.defaultView.focus();
 			}
 		}

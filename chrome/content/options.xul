@@ -32,19 +32,19 @@
         </hbox>
       </vbox>
       <vbox>
-       <hbox>
-        <checkbox id="checkbool_chde" preference="bool_chde" label="&checkboolchde.label;"/>
+        <hbox>
+          <checkbox id="checkbool_chde" preference="bool_chde" label="&checkboolchde.label;"/>
+        </hbox>
+        <hbox>
+          <checkbox id="checkbool_itde" preference="bool_itde" label="&checkboolitde.label;"/>
+        </hbox>
+        <hbox>
+          <checkbox id="checkbool_rude" preference="bool_rude" label="&checkboolrude.label;"/>
+        </hbox>
+        <hbox>
+          <checkbox id="checkbool_ptde" preference="bool_ptde" label="&checkboolptde.label;"/>
        </hbox>
-       <hbox>
-         <checkbox id="checkbool_itde" preference="bool_itde" label="&checkboolitde.label;"/>
-       </hbox>
-       <hbox>
-         <checkbox id="checkbool_rude" preference="bool_rude" label="&checkboolrude.label;"/>
-       </hbox>
-       <hbox>
-         <checkbox id="checkbool_ptde" preference="bool_ptde" label="&checkboolptde.label;"/>
-       </hbox>
-    </vbox>
+      </vbox>
     </groupbox>
   </prefpane>
 </prefwindow>
